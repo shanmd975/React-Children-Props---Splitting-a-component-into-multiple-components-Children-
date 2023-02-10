@@ -10,11 +10,11 @@ const App = () => {
   };
 
   return (
-    <div id="main">
-      <ChildComponent /> 
-       <input id='input' onChange={} />
-    
-      <p id='output'>{}</p>
+     <div id="main">
+      <ChildComponent>
+        <input id="input" onChange={handleInputChange} />
+      </ChildComponent>
+      <p id="output">{Number(input) * Number(input)}</p>
     </div>
   )
 }
